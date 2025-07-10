@@ -1,47 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brancosoft - App Development Company</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styl.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!--<nav class="navbar">
-    <div class="leftnav">
-      <h3>Ultrashield Technology</h3>
-    </div>
-    <ul class="navlist">
-      <li style="--i: 1;"><a href="#">Problems</a></li>
-      <li style="--i: 2;"><a href="#">Testimonials</a></li>
-      <li style="--i: 3;"><a href="#">Case Study</a></li>
-    </ul>
-    <button class="button">Request a Quote</button>
-  </nav>-->
   <div class="navbar-wrapper">
         <nav class="navbar">
             <div class="leftnav">
-                <h3>Ultrashield Technology</h3>
+                <!-- <h3>Ultrashield Technology</h3> -->
             </div>
             <ul class="navlist">
+                <h3>Ultrashield Technology</h3>
                 <li style="--i: 1;"><a href="#problems">Problems</a></li>
                 <li style="--i: 2;"><a href="#testimonials">Testimonials</a></li>
-                <li style="--i: 3;"><a href="#case-study">Case Study</a></li>
+                <li style="--i: 3;"><a href="#case-study">Case Study</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="button" onclick="openModal()">Request a Quote</button>
             </ul>
-            <button class="button">Request a Quote</button>
+            <!-- <button class="button" onclick="openModal()">Request a Quote</button> -->
+            <div class="hamburger" onclick="togglerMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+</div>
         </nav>
     </div>
 
-
-  <section class="sec">
+<button class="whats" onclick="alert('Button clicked!')"><img src="whatsapp.png" height="61px" width="61px"></button>
+<button class="callph" onclick="alert('button clicked!')"><img src="call.png" height="61px" width="61px"> </button>
+  
+<section class="sec">
     <div class="header">
       <h3 id="heh">⚡Limited Onboardings</h3>
       <h1 id="white">Award-Winning App Development</h1>
       <h2 id="yellow">Let's Build Your Success Story</h2>
       <h3>Our expert team bridges the gap between your vision and technology, guiding you every step of the way from ideation to deployment.</h3>
-      <button id="req">Request a Quote, Get a Callback in 10 Mins</button>
+      <button id="req" onclick="openModal()">Request a Quote, Get a Callback in 10 Mins</button>
     </div>
     <div class="im">
       <img id="im1" width="220" height="371" src="AVIS-2.png" alt="AVIS App Screenshot">
@@ -55,242 +54,42 @@
     </div>
   </section>
 
-  <!--<section class="chall">
-    <h1>Overcoming the Biggest Challenges</h1>
-    <h3>From high costs and poor design to scalability and post-launch support, we solve the problems startups face with innovative, affordable, and user-friendly solutions.</h3></section>
-    <section class="challenges">
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="card red">
-                       <img src="temp1.png">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card green">
-                        <img src="Neosotx.png" height="600px" width="791px">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="app-image">
-                        <img src="temp1.png">
-                        <div class="or">
-                            <hr><span>OR</span><hr>
-                        </div>
-                        <img src="temp1.png">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="arrow prev">&larr;</button>
-                <button class="arrow next">&rarr;</button>
-            </div>
-            <div class="carousel-dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </div>
 
-        <div class="form-container">
-            <h3>Have a project in mind? Let's Collaborate</h3>
-            <form>
-                <input type="text" placeholder="Full Name*" required>
-                <input type="email" placeholder="Business Email*" required>
-                <select required>
-                    <option value="" disabled selected>Country*</option>
-                    <option value="india">India (+91)</option>
-                </select>
-                <input type="tel" placeholder="Phone*" required>
-                <textarea placeholder="Tell us your development vision..." required></textarea>
-                <button>GET A FREE STRATEGY CALL 24 HOURS!</button>
-            </form>
-        </div>
-    </section>-->
 
-    <!--<div class="big">
-      <div class="containers">
-        <div class="container1">
-          <h2>Problem</h2>
-          <h3>What happens after your app is launched?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dicta ratione aspernatur officia nihil. Iste error facilis eius magnam, iusto magni dolores, possimus veritatis minus, perspiciatis quisquam officiis natus aliquam?</p></div>
-          <img class="cl1" src="head1.png" width="270" height="420" alt="Post-launch challenges illustration">
-        </div>
-        <div class="container2">
-          <h2>Solution</h2>
-          <h3>Comprehensive Post-Launch Support</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam aspernatur vel molestias deserunt minima! Nam dolore vitae vel officia, id ipsam omnis, laboriosam, ea quae aspernatur error molestias sunt.</p>
-        </div>
-      </div>
-      <form class="fr">
-        <h2 id="wh">Have a Project in Mind?</h2>
-        <h2 id="ye">Let's Collaborate</h2>
-        <input type="text" id="n" name="name" placeholder="Full Name" required><br>
-        <input type="email" id="e" name="email" placeholder="Business Email" required><br>
-        <label for="number">Phone Country Code</label>
-        <select name="country-code" id="number">
-          <option value="India(+91)">India (+91)</option>
-          <option value="United States(+1)">United States (+1)</option>
-        </select>
-        <input type="tel" id="t" name="phone" placeholder="Phone Number" required><br>
-        <select name="service" id="service">
-          <option value="Mobile App Development">Mobile App Development</option>
-          <option value="Website Development">Website Development</option>
-        </select><br>
-        <textarea rows="3" cols="50" placeholder="Tell us your development vision" required></textarea><br>
-        <button class="but1">Get a Free Strategy Call in 24 Hrs!</button>
-      </form>
+<section class="chall">
+    <div class="chall1">
+    <h2>Overcoming the biggest challenges</h2>
+    <h3>From high costs and poor design to scalability and post-launch support, we
+          solve the problems startups face with innovative, affordable, and user-friendly solutions.</h3>
     </div>
-  </section>-->
-
-
-  <!--<h1 id="te">Our Testimonials</h1>
-  <section class="test">
-    <div>
-      <h2>Ultrashield Technology Reviews 5.0 ⭐⭐⭐⭐⭐ 67 Reviews</h2>
-      <div class="rev">
-        <h3>5.0 ⭐⭐⭐⭐⭐<br>They stood out for their customer-centric approach.</h3>
-        <h4>CTO, Cybsafe<br>✅ Verified Review</h4>
-      </div>
+    <div class="chall12">
+          <div class="fr">
+        <iframe src="card.html"  height="668px" width="711px"> 
+        </iframe>
     </div>
-  </section>-->
-
-   <section class="chall">
-        <h1>Overcoming the Biggest Challenges</h1>
-        <h3>From high costs and poor design to scalability and post-launch support, we solve the problems startups face with innovative, affordable, and user-friendly solutions.</h3>
-    </section>
-
-    <section class="challenges">
-        <div class="carousel-container">
-            <div class="carousel" id="carousel">
-                <!-- Slide 1: Cards column + App mockup -->
-                <div class="carousel-item">
-                    <div class="cards-column">
-                        <div class="card red">
-                            <div class="tag">PROBLEM</div>
-                            <h3>ARE MISSED DEADLINES COSTING YOU OPPORTUNITIES?</h3>
-                            <p>Time-to-market is critical for startups, but traditional development methods can cause unnecessary delays. This often results in missed opportunities.</p>
-                        </div>
-                        
-                        <div class="card green">
-                            <div class="tag">SOLUTION</div>
-                            <h3>AGILE DEVELOPMENT TO MEET TIGHT DEADLINES</h3>
-                            <p>Our agile development process is designed for speed and efficiency, ensuring your app is built on time and ready to capitalize.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="app-image">
-                        <div class="app-content">
-                            <h3>neostax</h3>
-                            <div class="trading-chart">
-                                <div class="chart-placeholder"></div>
-                            </div>
-                            <div class="app-title">Real Market, Virtual Trading</div>
-                            <div class="app-subtitle">Real Trading Environment, with Tick by Tick Real market feed. No fear of losing money.</div>
-                            <div class="app-description">Practice as much as you can.</div>
-                            <button class="app-button">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2: Another set of content -->
-                <div class="carousel-item">
-                    <div class="cards-column">
-                        <div class="card red">
-                            <div class="tag">PROBLEM</div>
-                            <h3>HIGH DEVELOPMENT COSTS EATING YOUR BUDGET?</h3>
-                            <p>Traditional agencies charge premium rates that can drain startup budgets before launch, leaving little room for marketing and growth.</p>
-                        </div>
-                        
-                        <div class="card green">
-                            <div class="tag">SOLUTION</div>
-                            <h3>COST-EFFECTIVE DEVELOPMENT WITHOUT COMPROMISE</h3>
-                            <p>Our streamlined process and efficient team structure deliver high-quality apps at competitive rates, maximizing your ROI.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="app-image">
-                        <div class="app-content">
-                            <h3>Budget Tracker</h3>
-                            <div class="trading-chart">
-                                <div class="chart-placeholder"></div>
-                            </div>
-                            <div class="app-title">Smart Finance</div>
-                            <div class="app-subtitle">Track expenses and manage budget with intelligent insights.</div>
-                            <div class="app-description">Save money effortlessly.</div>
-                            <button class="app-button">Start Saving</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3: Third set of content -->
-                <div class="carousel-item">
-                    <div class="cards-column">
-                        <div class="card red">
-                            <div class="tag">PROBLEM</div>
-                            <h3>POOR USER EXPERIENCE HURTING RETENTION?</h3>
-                            <p>Complex interfaces and confusing navigation lead to high bounce rates and poor user satisfaction, killing growth potential.</p>
-                        </div>
-                        
-                        <div class="card green">
-                            <div class="tag">SOLUTION</div>
-                            <h3>INTUITIVE UX DESIGN THAT CONVERTS</h3>
-                            <p>Our user-centric design approach creates seamless experiences that keep users engaged and drive conversions.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="app-image">
-                        <div class="app-content">
-                            <h3>TaskFlow</h3>
-                            <div class="trading-chart">
-                                <div class="chart-placeholder"></div>
-                            </div>
-                            <div class="app-title">Productivity Suite</div>
-                            <div class="app-subtitle">Streamlined task management with beautiful, intuitive design.</div>
-                            <div class="app-description">Get more done, stress less.</div>
-                            <button class="app-button">Be Productive</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-controls">
-                <button class="arrow prev" onclick="prevSlide()">&larr;</button>
-                <button class="arrow next" onclick="nextSlide()">&rarr;</button>
-            </div>
-
-            <div class="carousel-dots">
-                <div class="dot active" onclick="currentSlide(1)"></div>
-                <div class="dot" onclick="currentSlide(2)"></div>
-                <div class="dot" onclick="currentSlide(3)"></div>
-            </div>
-        </div>
-
-        <div class="form-container">
-            <h3>Have a project in mind?<br><span>Let's Collaborate</span></h3>
+    <div class="form-cont">
+            <h4>Have a project in mind?<span>Let’s collaborate!</span></h4>
             <form>
-                <input type="text" placeholder="Full Name*" required>
-                <input type="email" placeholder="Business Email*" required>
-                <div class="form-row">
-                    <select required>
-                        <option value="" disabled selected>India (+91)</option>
-                        <option value="india">India (+91)</option>
-                        <option value="us">US (+1)</option>
-                        <option value="uk">UK (+44)</option>
+                <div class="form-row1">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="Email" required>
+                <div class="form-row1">
+                    <select>
+                        <option value="+1">+1</option>
+                        <option value="+91">+91</option>
                     </select>
-                    <input type="tel" placeholder="Phone*" required style="margin-bottom: 0;">
+                    <input type="tel" placeholder="Phone" required>
                 </div>
-                <select required>
-                    <option value="" disabled selected>Mobile App Development</option>
-                    <option value="mobile">Mobile App Development</option>
-                    <option value="web">Web Development</option>
-                    <option value="ui-ux">UI/UX Design</option>
-                </select>
-                <textarea placeholder="Tell us your development vision..." required></textarea>
-                <button type="submit">Get a Free Strategy Call in 24 Hours!</button>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
  <h1 id="te">Our Testimonials</h1>
 <section class="test">
@@ -326,6 +125,14 @@
             <p class="sc">5.0 ★★★★★</p>
             <p class="qt">"I actually loved dealing with them, and things worked pretty well."</p>
             <p class="au">Founder, Victory Cruise Lines</p>
+            <p class="vr">Verified Review</p>
+          </div>
+        </div>
+        <div class="rv-item">
+          <div class="cd">
+            <p class="sc">5.0 ★★★★★</p>
+            <p class="qt">"Ultrashield Technology was nimble and dedicated rather than rigid and well..."</p>
+            <p class="au">VP of Sales & Marketing, Sunfood Superfoods</p>
             <p class="vr">Verified Review</p>
           </div>
         </div>
@@ -417,17 +224,20 @@
     </div>
     <div class="cont">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex. Laborum laboriosam doloremque labore quasi iure. Quas explicabo deserunt eveniet voluptate esse, sed, cupiditate cum expedita eius nisi doloremque fuga.</h3>
-      <button class="agn">Request a quote</button>
+      <button class="agn" onclick="openModal()">Request a quote</button>
     </div>
   </section>
+      <section class="slider">
   <div class="b">
   <div class="carousel-container1">
-        <button class="arrow arrow-left" onclick="moveCarousel(-1)"></button>>
-        <div class="carousel1" id="carousel1">
+    <!-- <button class="arrow arrow-left" onclick="moveCarouselLeft()">‹</button>
+<button class="arrow arrow-right" onclick="moveCarouselRight()">›</button> -->
+        <button class="arrow arrow-left" onclick="moveCarousel(-1)"><</button>
+         <div class="carousel1" id="carousel1">
             <!-- Slide 1 -->
-            <div class="carousel-slide">
+             <div class="carousel-slide">
                 <div class="left-section">
-                    <img src="https://via.placeholder.com/400x300?text=Phone+Mockup+Slide+1" alt="Phone Mockup" class="phone-mockup">
+                    <img src="Beycome-2.png" alt="Phone Mockup" class="phone-mockup">
                 </div>
                 <div class="right-section">
                     <h1 class="title">Rekhta</h1>
@@ -436,30 +246,30 @@
                         Rekhta Foundation is a registered charity aimed at the preservation & promotion of languages, literature, and culture of South Asia with a particular focus on Urdu. Rekhta aims to be at the forefront of Preservation, Promotion, Education & Advocacy of Urdu language and other cultures of South Asia.
                     </p>
                     <div class="stats">
-                        <div class="stat-box">
-                            <div class="stat-number" id="calls-1">0X</div>
+                        <div class="stat-box"> 
+                             <div class="stat-number"  data-target="40" id="calls-1">0X</div>
                             <div class="stat-label">Calls*</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="customers-1">0X</div>
+                            <div class="stat-number" data-target="80" id="customers-1">0X</div>
                             <div class="stat-label">Customers</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="traffic-1">0X</div>
+                            <div class="stat-number"  data-target="50" id="traffic-1">0X</div>
                             <div class="stat-label">Traffic*</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="downloads-1">0X</div>
+                            <div class="stat-number" data-target="150" id="downloads-1">0X</div>
                             <div class="stat-label">Downloads</div>
                         </div>
                     </div>
                     <p class="note">*In last 6 months only</p>
                 </div>
-            </div>
+            </div> 
             <!-- Slide 2 (Duplicate for demonstration) -->
-            <div class="carousel-slide">
+             <div class="carousel-slide">
                 <div class="left-section">
-                    <img src="https://via.placeholder.com/400x300?text=Phone+Mockup+Slide+2" alt="Phone Mockup" class="phone-mockup">
+                    <img src="Neosotx.png" alt="Phone Mockup" class="phone-mockup">
                 </div>
                 <div class="right-section">
                     <h1 class="title">Rekhta</h1>
@@ -469,131 +279,33 @@
                     </p>
                     <div class="stats">
                         <div class="stat-box">
-                            <div class="stat-number" id="calls-2">0X</div>
-                            <div class="stat-label">Calls*</div>
+                            <div class="stat-number"data-target="40" id="calls-2">0X</div>
+                            <div class="stat-label">Calls*</div> 
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="customers-2">0X</div>
+                            <div class="stat-number"  data-target="80" id="customers-2">0X</div>
                             <div class="stat-label">Customers</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="traffic-2">0X</div>
+                            <div class="stat-number" data-target="50" id="traffic-2">0X</div>
                             <div class="stat-label">Traffic*</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number" id="downloads-2">0X</div>
+                            <div class="stat-number" data-target="150" id="downloads-2">0X</div>
                             <div class="stat-label">Downloads</div>
                         </div>
                     </div>
                     <p class="note">*In last 6 months only</p>
                 </div>
             </div>
-        </div>
-        <button class="arrow arrow-right" onclick="moveCarousel(1)">></button>
+        </div> 
+        <button class="arrow arrow-right" onclick="moveCarousel(1)">></button> 
     </div>
   </div>
-<!--<section class="cards">
-  <div class="bcover">
-    <img src="Beycome-Cover.webp">
-  </div>
-  <div class="beyco">
-    <h1> Beycome</h1>
-    <h3>Ios and Android</h3>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus corporis illum beatae, officiis, modi, adipisci perspiciatis temporibus eius quos corrupti dignissimos blanditiis quis iure. Rem, exercitationem asperiores. Praesentium, ab libero.</h4>
-    <div class="count1">
-    <h1 id="count" height="">20x traffic*</h1>
-    <h1 id="count">20x calls*</h1>
-    <h1 id="count">40x customers*</h1>
-    <h1 id="count">70x downloads</h1>
-    </div>
-    <h5>*in last 6 months only</h5>
-  </div>
-</section>-->
-
-
-
-<!--<section class="tech">
-  <div class="tused">
-    <h1> <mark>Technologies we use</mark> as a top mobile app development company</h1>
-    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magni delectus deserunt perferendis omnis veritatis quia odio necessitatibus repellat hic! Excepturi impedit adipisci quisquam totam blanditiis sapiente, libero expedita nemo?</h3>
-     </div>
-  <div class="logo">
-    <img src="Tech-we-use-607x1024.png">
-  </div>
-</section>-->
-
-
-
-
-<!--<section class="bline">
-  <div class="line">
-    <div><button class="d" id="subline"> Design
-    <button id="d"><img src="fi.png" height="37.19" width="37.19">Figma</button>
-    <button id="d">Marvel</button>
-    <button id="d">Adobe XD</button>
-    <button id="d">Sketch</button>
-    </button>
-    </div>
-    <div><button class="f"  id="subline">Frontend
-      <button id="f">Objc</button>
-      <button id="f">Swift</button>
-      <button id="f">React</button>
-      </button>
-      </div>
-    <button id="subline">Backend</button>
-  </div>
-</section>-->
-<!--<section class="techstack">
-<section class="bline">
-  <!-- 
-  <div class="line">
-    <button id="subline" onclick="show('d')">Design</button>
-    <button id="subline" onclick="show('f')">Frontend</button>
-    <button id="subline" onclick="show('b')">Backend</button>
-    <button id="subline" onclick="show('db')">Database</button>
-    <button id="subline" onclick="show('in')">Infrastructure</button>
-    <button id="subline" onclick="show('ai')">AI Technology</button>
-  </div>
+  </section> 
 
   
-  <div class="stack">
-    <div class="g d">
-      <button class="tech" id="d">Figma</button>
-      <button class="tech" id="d">Marvel</button>
-      <button class="tech" id="d">Adobe XD</button>
-      <button class="tech" id="d">Sketch</button>
-      <button class="tech" id="d">Photoshop</button>
-    </div>
 
-    <div class="g f" style="display: none;">
-      <button class="tech" id="f">React</button>
-      <button class="tech" id="f">Vue</button>
-      <button class="tech" id="f">Angular</button>
-    </div>
-
-    <div class="g b" style="display: none;">
-      <button class="tech" id="b">Node.js</button>
-      <button class="tech" id="b">Django</button>
-      <button class="tech" id="b">Spring Boot</button>
-    </div>
-
-    <div class="g db" style="display: none;">
-      <button class="tech" id="db">MySQL</button>
-      <button class="tech" id="db">PostgreSQL</button>
-    </div>
-
-    <div class="g in" style="display: none;">
-      <button class="tech" id="in">AWS</button>
-      <button class="tech" id="in">Docker</button>
-    </div>
-
-    <div class="g ai" style="display: none;">
-      <button class="tech" id="ai">TensorFlow</button>
-      <button class="tech" id="ai">OpenCV</button>
-    </div>
-  </div>
-</section>
-</section>-->
 <section class="hero">
         <div class="hero-content">
             <h1>Top Mobile Application Development Company</h1>
@@ -617,62 +329,44 @@
             <!-- Tech Stack Cards -->
             <div class="stack">
                 <div class="g d active">
-                    <button class="tech">Figma</button>
-                    <button class="tech">Marvel</button>
-                    <button class="tech">Adobe XD</button>
-                    <button class="tech">Sketch</button>
-                    <button class="tech">Photoshop</button>
+                    <button class="tech"><img src="fi.png" height="37px" width="37px">Figma</button>
+                    <button class="tech"><img src="marvel.png" height="37px" width="37px">Marvel</button>
+                    <button class="tech"><img src="xd.png" height="37px" width="37px">Adobe XD</button>
+                    <button class="tech"><img src="sketch.png" height="37px" width="37px">Sketch</button>
+                    <button class="tech"><img src="photoshop.png" height="37px" width="37px">Photoshop</button>
                 </div>
 
                 <div class="g f">
-                    <button class="tech">React</button>
-                    <button class="tech">Vue</button>
-                    <button class="tech">Angular</button>
+                    <button class="tech"><img src="react-1024x912.png" height="37px" width="37px">React</button>
+                    <button class="tech"><img src="vue.png" height="37px" width="37px">Vue</button>
+                    <button class="tech"><img src="angular.png" height="37px" width="37px">Angular</button>
                 </div>
 
                 <div class="g bt">
-                    <button class="tech">Node.js</button>
-                    <button class="tech">Django</button>
-                    <button class="tech">Spring Boot</button>
+                    <button class="tech"><img src="node-js-909x1024.png" height="37px" width="37px">Node.js</button>
+                    <button class="tech"><img src="django-icon.svg" height="37px" width="37px">Django</button>
+                    <button class="tech"><img src="spring-boot.png" height="37px" width="37px">Spring Boot</button>
                 </div>
 
                 <div class="g db">
-                    <button class="tech">MySQL</button>
-                    <button class="tech">PostgreSQL</button>
+                    <button class="tech"><img src="mysql.png" height="37px" width="37px">MySQL</button>
+                    <button class="tech"><img src="postgreSQL.webp" height="37px" width="37px">PostgreSQL</button>
                 </div>
 
                 <div class="g in">
-                    <button class="tech">AWS</button>
-                    <button class="tech">Docker</button>
+                    <button class="tech"><img src="2.aws_.svg" height="37px" width="37px">AWS</button>
+                    <button class="tech"><img src="5.docker.svg" height="37px" width="37px">Docker</button>
                 </div>
 
                 <div class="g ai">
-                    <button class="tech">TensorFlow</button>
-                    <button class="tech">OpenCV</button>
+                    <button class="tech"><img src="7.jukebox.svg" height="37px" width="37px">OpenAI Jukebox</button>
+                    <button class="tech"><img src="2.openAi.svg" height="37px" width="37px">Dall E-2</button>
                 </div>
             </div>
         </section>
     </section>
 
-<!--<section class="least">
-  <div>
-    <h1>Industries We Serve as a Custom Mobile Application Development Company</h1>
-  </div>
-  <div class="boxinfo">
-    <div class="elements">
-      <div class="sup"><button id="abt">Education</button>
-      <button id="abt">Ecommerce</button>
-      <button id="abt">Healthcare</button>
-      <button id="abt">Restaurant</button> 
-      <button id="abt">Real estate</button>
-      </div>
-      <div class="sub" id="abt1"><h2 id="l">Empowering Education with Smart & Scalable Mobile Solutions</h2>
-      <h2 id="l1"></h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut beatae nisi eaque corrupti quam in, ducimus minima suscipit a velit nesciunt sed assumenda nihil. Eligendi nihil iusto ad accusamus sequi!</h2>
-      <br><button class="l2">Start your project</button></div>
-      <div class="pic"><img src="4-4-607x1024.webp" height="386px" width="229px" ></div>
-    </div>
-  </div>
-</section>-->
+
 
 <section class="least">
         <div>
@@ -681,13 +375,13 @@
         <div class="boxinfo">
             <div class="elements">
                 <div class="sup">
-                    <button id="abt">Education</button>
-                    <button id="abt">Healthcare</button>
-                    <button id="abt">eCommerce</button>
-                    <button id="abt">Restaurant</button>
-                    <button id="abt">Real Estate</button>
-                    <button id="abt">FinTech</button>
-                    <button id="abt">Transport</button>
+                    <button id="abt" onclick="updateContent('education')">Education</button>
+                    <button id="abt" onclick="updateContent('healthcare')">Healthcare</button>
+                    <button id="abt" onclick="updateContent('ecommerce')">eCommerce</button>
+                    <button id="abt" onclick="updateContent('restaurant')">Restaurant</button>
+                    <button id="abt" onclick="updateContent('realestate')">Real Estate</button>
+                    <button id="abt" onclick="updateContent('fintech')">FinTech</button>
+                    <button id="abt" onclick="updateContent('transport')">Transport</button>
                 </div>
                 <div class="sub" id="abt1">
                     <h2 id="l">Empowering Education with Smart & Scalable Mobile Solutions</h2>
@@ -698,7 +392,8 @@
             <div class="modal-header">
                 <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
-            
+
+
             <div class="form-container">
                 <form id="projectForm" onsubmit="handleSubmit(event)">
                     <div class="form-group">
@@ -769,7 +464,7 @@
     </div>
     <div class="right">
       <h2>Have a project in mind?<br><span>Let’s Collaborate</span></h2>
-      <form>
+      <form method="post" action="">
         <input type="text" placeholder="Full Name*" required />
         <input type="email" placeholder="Business Email*" required />
         <div class="phone-row">
@@ -789,6 +484,7 @@
       </form>
     </div>
   </div>
+</section>
   <footer class="footer">
     <h3><span>ULTRA</span>SHIELD<br><span>TECHNOLOGY</span> <span class="dot">.</span></h3>
     <p>
@@ -802,237 +498,472 @@
     </div>
   </footer>
 
-  <script>
-        const carousel = document.querySelector('.carousel');
-        const dots = document.querySelectorAll('.dot');
-        const prevArrow = document.querySelector('.prev');
-        const nextArrow = document.querySelector('.next');
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+     const industryContent = {
+            education: {
+                title: "Empowering Education with Smart & Scalable Mobile Solutions",
+                description: "The education industry is evolving rapidly, and digital learning has become essential for institutions, educators, and students. Traditional learning methods often struggle with engagement, accessibility, and personalization, making it crucial for educational platforms to adopt innovative solutions. With AI-driven tutoring, interactive learning management systems (LMS), and AR/VR-powered experiences, we create mobile applications that transform education into a more immersive and personalized journey.<br><br>Whether you're an ed-tech startup or an educational institution, we provide technology that makes learning smarter, faster, and more impactful.",
+                image: "4-4-607x1024.webp"
+            },
+            healthcare: {
+                title: "Revolutionizing Healthcare with Mobile Innovations",
+                description: "The healthcare industry demands precision, accessibility, and efficiency. Our custom mobile applications empower healthcare providers with tools like telemedicine platforms, patient management systems, and AI-driven diagnostics. We create secure, HIPAA-compliant apps that enhance patient care, streamline operations, and improve accessibility.<br><br>From startups to established healthcare organizations, our solutions drive better outcomes and patient satisfaction.",
+                image: "healthcare-image.webp"
+            },
+            ecommerce: {
+                title: "Boosting eCommerce with Seamless Mobile Experiences",
+                description: "In the competitive eCommerce landscape, user experience is key. We develop mobile apps with intuitive interfaces, secure payment gateways, and personalized shopping experiences. Our solutions include inventory management, real-time analytics, and AI-driven product recommendations to boost sales.<br><br>Whether you're a retailer or a marketplace, we help you engage customers and grow your business.",
+                image: "ecommerce-image.webp"
+            },
+            restaurant: {
+                title: "Transforming Restaurants with Mobile Technology",
+                description: "Restaurants thrive on efficiency and customer satisfaction. Our mobile apps offer features like online ordering, table reservations, loyalty programs, and integrated payment systems. We create solutions that streamline operations and enhance the dining experience.<br><br>From small cafes to large chains, we deliver apps that keep customers coming back.",
+                image: "restaurant-image.webp"
+            },
+            realestate: {
+                title: "Innovating Real Estate with Mobile Solutions",
+                description: "The real estate industry benefits from mobile apps that simplify property searches, virtual tours, and client management. Our apps include features like 3D property visualizations, mortgage calculators, and CRM integrations to empower agents and buyers.<br><br>We help real estate businesses close deals faster with user-friendly technology.",
+                image: "realestate-image.webp"
+            },
+            fintech: {
+                title: "Driving FinTech Innovation with Secure Mobile Apps",
+                description: "The FinTech sector requires secure, scalable, and user-centric mobile solutions. We build apps with features like mobile banking, payment processing, and blockchain integration, all while ensuring compliance with financial regulations. Our solutions enhance user trust and operational efficiency.<br><br>From startups to financial institutions, we deliver cutting-edge FinTech apps.",
+                image: "fintech-image.webp"
+            },
+            transport: {
+                title: "Optimizing Transport with Smart Mobile Solutions",
+                description: "The transport industry relies on real-time data and connectivity. Our mobile apps provide features like GPS tracking, route optimization, and fleet management. We create solutions that improve logistics, reduce costs, and enhance customer experiences.<br><br>Whether for logistics or ride-sharing, our apps drive efficiency and reliability.",
+                image: "transport-image.webp"
+            }
+        };
+
+        // Function to update content based on industry
+        function updateContent(industry) {
+            const titleElement = document.getElementById('l');
+            const descriptionElement = document.getElementById('l1');
+            const imageElement = document.getElementById('industryImage');
+            const buttons = document.querySelectorAll('.sup #abt');
+
+            // Update content
+            titleElement.innerHTML = industryContent[industry].title;
+            descriptionElement.innerHTML = industryContent[industry].description;
+            imageElement.src = industryContent[industry].image;
+
+            // Update active button state
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.textContent.toLowerCase().replace(' ', '') === industry) {
+                    button.classList.add('active');
+                }
+            });
+        }
+
+
+          function togglerMenu() {
+          const hamburger = document.querySelector('.hamburger');
+            const navlist = document.querySelector('.navlist');
+            
+            hamburger.classList.toggle('active');
+            navlist.classList.toggle('active');
+          }
+
+        // Close menu when clicking on a link (mobile)
+        document.querySelectorAll('.navlist a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    const hamburger = document.querySelector('.hamburger');
+                    const navlist = document.querySelector('.navlist');
+                    hamburger.classList.remove('active');
+                    navlist.classList.remove('active');
+                }
+            });
+        });
+
+        // Close menu when clicking outside (mobile)
+        document.addEventListener('click', function(event) {
+            const hamburger = document.querySelector('.hamburger');
+            const navlist = document.querySelector('.navlist');
+            const navbar = document.querySelector('.navbar');
+            
+            if (window.innerWidth <= 768 && !navbar.contains(event.target)) {
+                hamburger.classList.remove('active');
+                navlist.classList.remove('active');
+            }
+        });
+
+        // Reset menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const hamburger = document.querySelector('.hamburger');
+                const navlist = document.querySelector('.navlist');
+                hamburger.classList.remove('active');
+                navlist.classList.remove('active');
+            }
+        });
+
+        // Scroll effect for navbar (your existing functionality)
+        window.addEventListener('scroll', function() {
+            const navbarWrapper = document.querySelector('.navbar-wrapper');
+            if (window.scrollY > 50) {
+                navbarWrapper.classList.add('scrolled');
+            } else {
+                navbarWrapper.classList.remove('scrolled');
+            }
+        });
+
+        // Handle scroll effect
+        window.addEventListener('scroll', function() {
+            const navbarWrapper = document.querySelector('.navbar-wrapper');
+            if (window.scrollY > 50) {
+                navbarWrapper.classList.add('scrolled');
+            } else {
+                navbarWrapper.classList.remove('scrolled');
+            }
+        });
+   
+
+    // Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ===============================
+    // MAIN CAROUSEL FUNCTIONALITY
+    // ===============================
+    const carousel = document.querySelector('.carousel');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.carousel-controls .prev');
+    const nextBtn = document.querySelector('.carousel-controls .next');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    
+    if (carousel && carouselItems.length > 0) {
         let currentIndex = 0;
-        const totalItems = 3;
+        const totalItems = carouselItems.length;
+        let autoSlide;
 
         function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
+            const offset = -currentIndex * (100 / totalItems);
+            carousel.style.transform = `translateX(${offset}%)`;
+
+            // Update active dot
+            if (dots.length > 0) {
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
         }
 
-        // Manual navigation via dots
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                updateCarousel();
-            });
-        });
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
 
-        // Arrow navigation
-        prevArrow.addEventListener('click', () => {
+        function prevSlide() {
             currentIndex = (currentIndex - 1 + totalItems) % totalItems;
             updateCarousel();
-        });
-
-        nextArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateCarousel();
-        });
-
-        // Automatic sliding every 3 seconds
-        let autoSlide = setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateCarousel();
-        }, 3000);
-
-        // Pause auto-slide on arrow click and resume after 3 seconds
-        function resetAutoSlide() {
-            clearInterval(autoSlide);
-            autoSlide = setInterval(() => {
-                currentIndex = (currentIndex + 1) % totalItems;
-                updateCarousel();
-            }, 3000);
         }
 
-        prevArrow.addEventListener('click', resetAutoSlide);
-        nextArrow.addEventListener('click', resetAutoSlide);
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        // Event listeners for navigation
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
         
-        let currentIndex1 = 0;
-        const totalSlides = 2;
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
 
-        // Countdown animation for each stat
-        function animateCounter(id, endValue, duration) {
-            const element = document.getElementById(id);
-            let startValue = 0;
-            const increment = endValue / (duration / 50);
-            let currentValue = startValue;
-
-            const interval = setInterval(() => {
-                currentValue += increment;
-                if (currentValue >= endValue) {
-                    currentValue = endValue;
-                    clearInterval(interval);
-                }
-                element.textContent = Math.round(currentValue) + 'X';
-            }, 50);
+        // Auto-slide every 5 seconds
+        function startAutoSlide() {
+            autoSlide = setInterval(nextSlide, 5000);
         }
 
-        // Responsive number adjustments and animation
-        function adjustNumbers(slideIndex) {
-            const traffic = document.getElementById(`traffic-${slideIndex}`);
-            const calls = document.getElementById(`calls-${slideIndex}`);
-            const customers = document.getElementById(`customers-${slideIndex}`);
-            const downloads = document.getElementById(`downloads-${slideIndex}`);
+        function stopAutoSlide() {
+            clearInterval(autoSlide);
+        }
 
-            let trafficEnd, callsEnd, customersEnd, downloadsEnd;
+        // Pause auto-slide on hover
+        const carouselContainer = carousel.parentElement;
+        if (carouselContainer) {
+            carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+            carouselContainer.addEventListener('mouseleave', startAutoSlide);
+        }
 
+        // Initialize carousel
+        updateCarousel();
+        startAutoSlide();
+    }
+
+    // ===============================
+    // STATS CAROUSEL FUNCTIONALITY - UPDATED
+    // ===============================
+    let currentIndex1 = 0;
+    const totalSlides = 2;
+
+    // Countdown animation for each stat
+    function animateCounter(id, endValue, duration) {
+        const element = document.getElementById(id);
+        if (!element) return;
+        
+        let startValue = 0;
+        const increment = endValue / (duration / 50);
+        let currentValue = startValue;
+
+        const interval = setInterval(() => {
+            currentValue += increment;
+            if (currentValue >= endValue) {
+                currentValue = endValue;
+                clearInterval(interval);
+            }
+            element.textContent = Math.round(currentValue) + 'X';
+        }, 50);
+    }
+
+    // Responsive number adjustments and animation
+    function adjustNumbers(slideIndex) {
+        const traffic = document.getElementById(`traffic-${slideIndex}`);
+        const calls = document.getElementById(`calls-${slideIndex}`);
+        const customers = document.getElementById(`customers-${slideIndex}`);
+        const downloads = document.getElementById(`downloads-${slideIndex}`);
+
+        // Check if elements exist
+        if (!traffic || !calls || !customers || !downloads) return;
+
+        let trafficEnd, callsEnd, customersEnd, downloadsEnd;
+
+        // Set different values for each slide
+        if (slideIndex === 1) {
+            if (window.innerWidth <= 768) {
+                trafficEnd = 40;
+                callsEnd = 30;
+                customersEnd = 60;
+                downloadsEnd = 120;
+            } else {
+                trafficEnd = 50;
+                callsEnd = 40;
+                customersEnd = 80;
+                downloadsEnd = 150;
+            }
+        } else if (slideIndex === 2) {
             if (window.innerWidth <= 768) {
                 trafficEnd = 60;
                 callsEnd = 8;
-                customersEnd = 40;
-                downloadsEnd = 80;
+                customersEnd = 180;
+                downloadsEnd = 450;
             } else {
                 trafficEnd = 70;
                 callsEnd = 10;
-                customersEnd = 50;
-                downloadsEnd = 100;
+                customersEnd = 200;
+                downloadsEnd = 500;
             }
-
-            // Reset values to 0 before animating
-            traffic.textContent = '0X';
-            calls.textContent = '0X';
-            customers.textContent = '0X';
-            downloads.textContent = '0X';
-
-            // Animate counters
-            animateCounter(`calls-${slideIndex}`, callsEnd, 2000);
-            animateCounter(`customers-${slideIndex}`, customersEnd, 2000);
-            animateCounter(`traffic-${slideIndex}`, trafficEnd, 2000);
-            animateCounter(`downloads-${slideIndex}`, downloadsEnd, 2000);
         }
 
-        // Move carousel left or right
-        function moveCarousel(direction) {
-            currentIndex1 += direction;
+        // Reset values to 0 before animating
+        traffic.textContent = '0X';
+        calls.textContent = '0X';
+        customers.textContent = '0X';
+        downloads.textContent = '0X';
 
-            if (currentIndex1 < 0) {
-                currentIndex1 = 0;
-            } else if (currentIndex1 >= totalSlides) {
-                currentIndex1 = totalSlides - 1;
-            }
+        // Animate counters with slight delays for better effect
+        setTimeout(() => animateCounter(`calls-${slideIndex}`, callsEnd, 2000), 200);
+        setTimeout(() => animateCounter(`customers-${slideIndex}`, customersEnd, 2000), 400);
+        setTimeout(() => animateCounter(`traffic-${slideIndex}`, trafficEnd, 2000), 600);
+        setTimeout(() => animateCounter(`downloads-${slideIndex}`, downloadsEnd, 2000), 800);
+    }
 
-            updateCarousel();
+    // Move stats carousel left or right - UPDATED
+    function moveCarousel(direction) {
+        currentIndex1 += direction;
 
-            // Animate numbers for the visible slide
+        if (currentIndex1 < 0) {
+            currentIndex1 = totalSlides - 1;
+        } else if (currentIndex1 >= totalSlides) {
+            currentIndex1 = 0;
+        }
+
+        updateStatsCarousel();
+        // Delay animation to allow transition to complete
+        setTimeout(() => {
             adjustNumbers(currentIndex1 + 1);
-        }
+        }, 300);
+    }
 
-        // Update carousel position
-        function updateCarousel() {
-            const carousel = document.getElementById('carousel');
+    // Update stats carousel position - UPDATED
+    function updateStatsCarousel() {
+        const statsCarousel = document.getElementById('carousel1');
+        if (statsCarousel) {
             const translateX = -currentIndex1 * 100;
-            carousel.style.transform = `translateX(${translateX}%)`;
+            statsCarousel.style.transform = `translateX(${translateX}%)`;
         }
+    }
 
-        window.addEventListener('resize', () => {
-            adjustNumbers(currentIndex1 + 1);
-        });
-        window.addEventListener('load', () => {
-            adjustNumbers(1); // Initial animation for the first slide
-        });
+    // Make moveCarousel function globally available
+    window.moveCarousel = moveCarousel;
 
-    
-  const rv = document.querySelector(".rv");
-  document.querySelector(".al").addEventListener("click", () => {
-    rv.scrollBy({ left: -300, behavior: "smooth" });
-  });
-  document.querySelector(".ar").addEventListener("click", () => {
-    rv.scrollBy({ left: 300, behavior: "smooth" });
-  });
-
-  
-  function show(section) {
-    document.querySelectorAll('.g').forEach(g => g.style.display = 'none');
-    document.querySelector('.' + section).style.display = 'flex';
-  }
-
-  // Show design stack by default on page load
-  document.addEventListener("DOMContentLoaded", () => {
-    show('d');
-  });
-
-  function show(section) {
-    document.querySelectorAll('.g').forEach(group => {
-      group.style.display = 'none';
+    // Event listeners for stats carousel
+    window.addEventListener('resize', () => {
+        adjustNumbers(currentIndex1 + 1);
     });
-    document.querySelector('.' + section).style.display = 'flex';
-  }
 
-  // Show Design stack on load
-  document.addEventListener("DOMContentLoaded", () => {
-    show('d');
-  });
+    // Initialize stats carousel
+    setTimeout(() => {
+        adjustNumbers(1);
+    }, 500);
 
-  function show(category) {
-            // Hide all tech groups
-            const allGroups = document.querySelectorAll('.g');
-            allGroups.forEach(group => {
-                group.classList.remove('active');
-            });
+    // ===============================
+    // REVIEW CAROUSEL FUNCTIONALITY
+    // ===============================
+    const reviewContainer = document.querySelector(".rv");
+    const arrowLeft = document.querySelector(".al");
+    const arrowRight = document.querySelector(".ar");
 
-            // Remove active class from all tab buttons
-            const allTabs = document.querySelectorAll('#subline');
-            allTabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
+    if (reviewContainer && arrowLeft && arrowRight) {
+        arrowLeft.addEventListener("click", () => {
+            reviewContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        
+        arrowRight.addEventListener("click", () => {
+            reviewContainer.scrollBy({ left: 300, behavior: "smooth" });
+        });
+    }
 
-            // Show selected category
-            const selectedGroup = document.querySelector(`.g.${category}`);
-            if (selectedGroup) {
-                selectedGroup.classList.add('active');
-            }
+    // ===============================
+    // TECH STACK FUNCTIONALITY
+    // ===============================
+    function show(section) {
+        // Hide all tech groups
+        const allGroups = document.querySelectorAll('.g');
+        allGroups.forEach(group => {
+            group.style.display = 'none';
+            group.classList.remove('active');
+        });
 
-            // Add active class to clicked tab
-            event.target.classList.add('active');
+        // Show selected category
+        const selectedGroup = document.querySelector(`.g.${section}`);
+        if (selectedGroup) {
+            selectedGroup.style.display = 'flex';
+            selectedGroup.classList.add('active');
         }
 
-         function openModal() {
-            const modal = document.getElementById('modalOverlay');
+        // Update tab buttons
+        const allTabs = document.querySelectorAll('#subline');
+        allTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+    }
+
+    // Make show function globally available
+    window.show = show;
+
+    // Show Design stack by default
+    show('d');
+
+    // ===============================
+    // MODAL FUNCTIONALITY
+    // ===============================
+    function openModal() {
+        const modal = document.getElementById('modalOverlay');
+        if (modal) {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
+    }
 
-        function closeModal(event) {
-            if (event && event.target !== event.currentTarget) {
-                return;
-            }
-            const modal = document.getElementById('modalOverlay');
+    function closeModal(event) {
+        if (event && event.target !== event.currentTarget) {
+            return;
+        }
+        const modal = document.getElementById('modalOverlay');
+        if (modal) {
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
+    }
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to your server
-            console.log('Form submitted with data:', data);
-            
-            // Show success message (you can customize this)
-            alert('Thank you! We will contact you within 24 hours for your free strategy call.');
-            
-            // Close modal and reset form
+    function handleSubmit(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData);
+        
+        // Here you would typically send the data to your server
+        console.log('Form submitted with data:', data);
+        
+        // Show success message
+        alert('Thank you! We will contact you within 24 hours for your free strategy call.');
+        
+        // Close modal and reset form
+        closeModal();
+        event.target.reset();
+    }
+
+    // Make modal functions globally available
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+    window.handleSubmit = handleSubmit;
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
             closeModal();
-            event.target.reset();
         }
+    });
 
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
+    // ===============================
+    // ADDITIONAL STATS CAROUSEL FEATURES
+    // ===============================
+    
+    // Add keyboard navigation for stats carousel
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            moveCarousel(-1);
+        } else if (event.key === 'ArrowRight') {
+            moveCarousel(1);
+        }
+    });
+
+    // Add touch/swipe support for stats carousel
+    let startX = 0;
+    let startY = 0;
+    const statsCarouselContainer = document.querySelector('.carousel-container1');
+    
+    if (statsCarouselContainer) {
+        statsCarouselContainer.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
         });
 
-    </script>
+        statsCarouselContainer.addEventListener('touchend', function(e) {
+            if (!startX || !startY) return;
+
+            const endX = e.changedTouches[0].clientX;
+            const endY = e.changedTouches[0].clientY;
+            
+            const diffX = startX - endX;
+            const diffY = startY - endY;
+
+            // Only trigger if horizontal swipe is more significant than vertical
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                if (Math.abs(diffX) > 50) { // Minimum swipe distance
+                    if (diffX > 0) {
+                        moveCarousel(1); // Swipe left, go to next
+                    } else {
+                        moveCarousel(-1); // Swipe right, go to previous
+                    }
+                }
+            }
+
+            startX = 0;
+            startY = 0;
+        });
+    }
+
+});
+
+</script>
 </section>
 </body>
 </html>
